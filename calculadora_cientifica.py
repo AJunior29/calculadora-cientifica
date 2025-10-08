@@ -1,6 +1,5 @@
 import math
 
-# --- FUNÇÕES MATEMÁTICAS ---
 
 def soma(valores):
     return sum(valores)
@@ -57,8 +56,6 @@ def tangente(graus):
     return math.tan(math.radians(graus))
 
 
-# --- FUNÇÕES DE SUPORTE ---
-
 def obter_numero(mensagem, tipo=float):
     while True:
         try:
@@ -66,8 +63,6 @@ def obter_numero(mensagem, tipo=float):
         except ValueError:
             print("Entrada inválida. Por favor, digite um número.")
 
-
-# --- EXECUÇÃO PRINCIPAL ---
 
 MAPA_OPERACAO = {
     "1": (soma, "Digite os Números separados por um espaço:"),
